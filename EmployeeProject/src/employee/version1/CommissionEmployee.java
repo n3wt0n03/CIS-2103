@@ -13,7 +13,7 @@ public class CommissionEmployee {
     private int empID = 0;
     private String empName = "";
     private Date empDateHired = new Date(1, 1, 2023);
-    private Date empBirthDate = new Date(1, 1, 2023);;
+    private Date empBirthDate = new Date(1, 1, 2023);
     private double totalSales = 0;
 
     public CommissionEmployee() {
@@ -71,11 +71,19 @@ public class CommissionEmployee {
     }
 
     public void setTotalSales(double totalSales) {
-        this.totalSales = totalSales;
+        this.totalSales = totalSales > 0 ? totalSales : 0;
     }
     
     double computeSalary() {
-        return 0;
+      if(totalSales < 50000){
+        return totalSales * .05;
+      } else if (totalSales >= 50000 && totalSales < 100000){
+        return totalSales * .2;
+      } else if (totalSales >= 100000 && totalSales < 500000) {
+        return totalSales * .3;
+      } else {
+        return totalSales * .5;
+      }
     }
     
     public void displayInfo(){
