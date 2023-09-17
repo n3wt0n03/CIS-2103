@@ -9,6 +9,7 @@ package employee.version1;
  *
  * @author User
  */
+
 public class TestMain {
 
     /**
@@ -64,7 +65,15 @@ public class TestMain {
         , new Date(7, 7, 2001), 1000000.99);
         
         cemp4.displayInfo();
-
+        
+        
+        //Base Plus Commission Worker
+        
+        //less than 50k
+        BasePlusCommissionEmployee bpcemp1 = new BasePlusCommissionEmployee(9, "Marjhun", new Date(22, 10, 2019)
+        , new Date(20, 12, 1993), 49000, 5000);
+        
+        bpcemp1.displayInfo();
     }
     
 }
