@@ -39,6 +39,31 @@ public class TestMain {
         
         pemp2.displayInfo();
       
+        //Commission Worker
+        
+        //less than 50k
+        CommissionEmployee cemp1 = new CommissionEmployee(5, "Marjhun", new Date(22, 10, 2019)
+        , new Date(20, 12, 1993), 49000);
+        
+        cemp1.displayInfo();
+        
+        //greater or equal to 50k but less than 100k
+        CommissionEmployee cemp2 = new CommissionEmployee(6, "Ella", new Date(1, 6, 2018)
+        , new Date(26, 11, 1993), 85000.50);
+        
+        cemp2.displayInfo();
+        
+        //greater or equal to 100k but less than 500k
+        CommissionEmployee cemp3 = new CommissionEmployee(7, "King", new Date(1, 6, 2023)
+        , new Date(20, 10, 2021), 499999.99);
+        
+        cemp3.displayInfo();
+        
+        //greater than 500k onwards
+        CommissionEmployee cemp4 = new CommissionEmployee(8, "BBK", new Date(23, 6, 2021)
+        , new Date(7, 7, 2001), 1000000.99);
+        
+        cemp4.displayInfo();
 
     }
     
