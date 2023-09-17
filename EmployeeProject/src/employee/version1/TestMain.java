@@ -27,6 +27,18 @@ public class TestMain {
         new Date(8, 9, 1973), 45, 75);
         
         emp2.displayInfo();
+        
+        //Per Piece Worker
+        PieceWorkerEmployee pemp1 = new PieceWorkerEmployee(3, "Nicole", new Date(14, 9, 2022)
+        , new Date(5, 3, 2002), 100, 95);
+        
+        pemp1.displayInfo();
+        
+        PieceWorkerEmployee pemp2 = new PieceWorkerEmployee(4, "Ecal", new Date(5, 3, 2002)
+        , new Date(15, 12, 1972), 95, 95);
+        
+        pemp2.displayInfo();
+      
 
     }
     
