@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package employee.verison2;
+package employee.version3;
 
 /**
  *
  * @author NewtskieTzy
  */
-public class HourlyEmployee extends Employee{
+public class HourlyEmployee extends Employee {
     private float totalHourWorked = 0;
     private float ratePerHour = 0;
     private double hrsOvertime = 0;

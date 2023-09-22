@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package employee.verison2;
+package employee.version3;
 
 /**
  *
  * @author NewtskieTzy
  */
-public class PieceWorkerEmployee extends Employee{
+public class PieceWorkerEmployee extends Employee {
     private int totalPiecesFinished = 0;
     private float ratePerPiece = 0;
 

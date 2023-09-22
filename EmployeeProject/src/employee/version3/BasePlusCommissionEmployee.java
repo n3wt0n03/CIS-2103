@@ -1,4 +1,4 @@
-package employee.verison2;
+package employee.version3;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -10,7 +10,7 @@ package employee.verison2;
  *
  * @author NewtskieTzy
  */
-public class BasePlusCommissionEmployee extends CommissionEmployee{
+public class BasePlusCommissionEmployee extends CommissionEmployee {
     private double baseSalary = 0;
 
     public BasePlusCommissionEmployee(double totalSales, double baseSalary) {

@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package employee.verison2;
+package employee.version3;
 
 /**
  *
  * @author NewtskieTzy
  */
-public class CommissionEmployee extends Employee{
+public class CommissionEmployee extends Employee {
     private double totalSales = 0;
 
     public CommissionEmployee(double totalSales) {

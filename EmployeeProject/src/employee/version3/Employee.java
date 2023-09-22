@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package employee.verison2;
+package employee.version3;
 
 /**
  *
@@ -13,7 +13,7 @@ public class Employee {
     private int empID = 0;
     private String empName = "";
     private Date empDateHired = new Date(1, 1, 2023);
-    private Date empBirthDate = new Date(1, 1, 2023); 
+    private Date empBirthDate = new Date(1, 1, 2023);
 
     public Employee() {
         

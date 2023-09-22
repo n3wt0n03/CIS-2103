@@ -104,7 +104,7 @@ public class PieceWorkerEmployee {
     public void displayInfo(){
         System.out.println("Piece Per Worker Employee: \n");
         System.out.println(toString());
-        System.out.println(String.format("Salary: %.2f", computeSalary()));
+        System.out.printf("Salary: %.2f%n", computeSalary());
     }
 
     @Override

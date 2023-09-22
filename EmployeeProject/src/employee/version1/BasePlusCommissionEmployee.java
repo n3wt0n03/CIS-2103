@@ -84,7 +84,7 @@ public class BasePlusCommissionEmployee {
       this.baseSalary = baseSalary > 0 ? baseSalary : 0;
     }
     
-    double computeSalary() {
+    public double computeSalary() {
       if(totalSales < 50000){
         totalSales *= .05;
       } else if (totalSales >= 50000 && totalSales < 100000){
@@ -102,7 +102,7 @@ public class BasePlusCommissionEmployee {
     public void displayInfo(){
         System.out.println("Base Plus Commission Employee: \n");
         System.out.println(toString());
-        System.out.println(String.format("Salary: %.2f", computeSalary()));
+        System.out.printf("Salary: %.2f%n", computeSalary());
     }
 
     @Override
