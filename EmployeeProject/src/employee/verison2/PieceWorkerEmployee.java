@@ -59,7 +59,7 @@ public int getTotalPiecesFinished() {
 
     public void displayInfo(){
         System.out.println("\nPiece Per Worker Employee: \n");
-        System.out.println(toString());
+        System.out.println(this);
         System.out.printf("Salary: %.2f%n", computeSalary());
     }
 

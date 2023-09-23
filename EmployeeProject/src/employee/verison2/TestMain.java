@@ -5,9 +5,6 @@
  */
 package employee.verison2;
 
-
-import employee.version1.CommissionEmployee;
-
 /**
  *
  * @author NewtskieTzy
@@ -27,38 +24,38 @@ public class TestMain {
 
         //Per Piece Worker
         PieceWorkerEmployee pemp1 = new PieceWorkerEmployee(3, "Nicole", new Date(14, 9, 2022)
-        , new Date(5, 3, 2002), 100, 95);
+                , new Date(5, 3, 2002), 100, 95);
 
         pemp1.displayInfo();
 
         PieceWorkerEmployee pemp2 = new PieceWorkerEmployee(4, "Ecal", new Date(5, 3, 2002)
-        , new Date(15, 12, 1972), 95, 95);
+                , new Date(15, 12, 1972), 95, 95);
 
         pemp2.displayInfo();
 
         //Commission Worker
 
         //less than 50k
-        employee.version1.CommissionEmployee cemp1 = new employee.version1.CommissionEmployee(5, "Marjhun", new employee.version1.Date(22, 10, 2019)
-                , new employee.version1.Date(20, 12, 1993), 49000);
+        CommissionEmployee cemp1 = new CommissionEmployee(5, "Marjhun", new Date(22, 10, 2019)
+                , new Date(20, 12, 1993), 49000);
 
         cemp1.displayInfo();
 
         //greater or equal to 50k but less than 100k
-        employee.version1.CommissionEmployee cemp2 = new employee.version1.CommissionEmployee(6, "Ella", new employee.version1.Date(1, 6, 2018)
-                , new employee.version1.Date(26, 11, 1993), 85000.50);
+        CommissionEmployee cemp2 = new CommissionEmployee(6, "Ella", new Date(1, 6, 2018)
+                , new Date(26, 11, 1993), 85000.50);
 
         cemp2.displayInfo();
 
         //greater or equal to 100k but less than 500k
-        employee.version1.CommissionEmployee cemp3 = new employee.version1.CommissionEmployee(7, "King", new employee.version1.Date(1, 6, 2023)
-                , new employee.version1.Date(20, 10, 2021), 499999.99);
+        CommissionEmployee cemp3 = new CommissionEmployee(7, "King", new Date(1, 6, 2023)
+                , new Date(20, 10, 2021), 499999.99);
 
         cemp3.displayInfo();
 
         //greater than 500k onwards
-        employee.version1.CommissionEmployee cemp4 = new CommissionEmployee(8, "BBK", new employee.version1.Date(23, 6, 2021)
-                , new employee.version1.Date(7, 7, 2001), 1000000.99);
+        CommissionEmployee cemp4 = new CommissionEmployee(8, "BBK", new Date(23, 6, 2021)
+                , new Date(7, 7, 2001), 1000000.99);
 
         cemp4.displayInfo();
 

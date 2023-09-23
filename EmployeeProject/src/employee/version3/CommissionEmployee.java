@@ -12,11 +12,14 @@ package employee.version3;
 public class CommissionEmployee extends Employee {
     private double totalSales = 0;
 
+    public CommissionEmployee(){
+    }
+
     public CommissionEmployee(double totalSales) {
         this.totalSales = totalSales;
     }
 
-    public CommissionEmployee(int empID, String empName, Date empDateHired, Date empBirthDate, double totalSales) {
+    public CommissionEmployee(int empID, Name empName, Date empDateHired, Date empBirthDate, double totalSales) {
         super(empID, empName, empDateHired, empBirthDate);
         this.totalSales = totalSales;
     }

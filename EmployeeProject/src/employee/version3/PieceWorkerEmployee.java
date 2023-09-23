@@ -13,12 +13,16 @@ public class PieceWorkerEmployee extends Employee {
     private int totalPiecesFinished = 0;
     private float ratePerPiece = 0;
 
+    public PieceWorkerEmployee(){
+
+    }
+
     public PieceWorkerEmployee(int totalPiecesFinished, float ratePerPiece) {
         this.totalPiecesFinished = totalPiecesFinished;
         this.ratePerPiece = ratePerPiece;
     }
 
-    public PieceWorkerEmployee(int empID, String empName, Date empDateHired, Date empBirthDate, int totalPiecesFinished, float ratePerPiece) {
+    public PieceWorkerEmployee(int empID, Name empName, Date empDateHired, Date empBirthDate, int totalPiecesFinished, float ratePerPiece) {
         super(empID, empName, empDateHired, empBirthDate);
         this.totalPiecesFinished = totalPiecesFinished;
         this.ratePerPiece = ratePerPiece;
@@ -59,7 +63,7 @@ public int getTotalPiecesFinished() {
 
     public void displayInfo(){
         System.out.println("\nPiece Per Worker Employee: \n");
-        System.out.println(toString());
+        System.out.println(this);
         System.out.printf("Salary: %.2f%n", computeSalary());
     }
 

@@ -11,15 +11,15 @@ package employee.version3;
  */
 public class Employee {
     private int empID = 0;
-    private String empName = "";
-    private Date empDateHired = new Date(1, 1, 2023);
-    private Date empBirthDate = new Date(1, 1, 2023);
+    private Name empName = new Name();
+    private Date empDateHired = new Date();
+    private Date empBirthDate = new Date();
 
     public Employee() {
         
     }
     
-     public Employee(int empID, String empName, Date empDateHired, Date empBirthDate) {
+     public Employee(int empID, Name empName, Date empDateHired, Date empBirthDate) {
         this.empID = empID;
         this.empName = empName;
         this.empDateHired = empDateHired;
@@ -34,11 +34,11 @@ public class Employee {
         this.empID = empID;
     }
 
-    public String getEmpName() {
+    public Name getEmpName() {
         return empName;
     }
 
-    public void setEmpName(String empName) {
+    public void setEmpName(Name empName) {
         this.empName = empName;
     }
 
@@ -61,7 +61,7 @@ public class Employee {
     @Override
     public String toString() {
         return "ID: " + empID +
-               "\nName: " + empName +
+               "\nName:" + empName +
                "\nDateHired: " + empDateHired +
                "\nBirthDate: " + empBirthDate;
     }

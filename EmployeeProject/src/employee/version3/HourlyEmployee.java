@@ -15,12 +15,16 @@ public class HourlyEmployee extends Employee {
     private double hrsOvertime = 0;
     private double overtimePay = 0;
 
+    public HourlyEmployee(){
+
+    }
+
     public HourlyEmployee(float totalHourWorked, float ratePerHour) {
         this.totalHourWorked = totalHourWorked;
         this.ratePerHour = ratePerHour;
     }
 
-    public HourlyEmployee(int empID, String empName, Date empDateHired, Date empBirthDate, float totalHourWorked, float ratePerHour) {
+    public HourlyEmployee(int empID, Name empName, Date empDateHired, Date empBirthDate, float totalHourWorked, float ratePerHour) {
         super(empID, empName, empDateHired, empBirthDate);
         this.totalHourWorked = totalHourWorked;
         this.ratePerHour = ratePerHour;
@@ -77,7 +81,7 @@ public class HourlyEmployee extends Employee {
 
     public void displayInfo(){
         System.out.println("\nHourly Employee: \n");
-        System.out.println(toString());
+        System.out.println(this);
         System.out.printf("Salary: %.2f%n", computeSalary());
         System.out.printf("Overtime Pay: %.2f\n%n", getOvertimePay());
     }

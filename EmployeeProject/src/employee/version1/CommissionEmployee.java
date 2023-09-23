@@ -88,7 +88,7 @@ public class CommissionEmployee {
     
     public void displayInfo(){
         System.out.println("\nCommission Employee: \n");
-        System.out.println(toString());
+        System.out.println(this);
         System.out.printf("Salary: %.2f%n", computeSalary());
     }
 

@@ -13,12 +13,16 @@ package employee.version3;
 public class BasePlusCommissionEmployee extends CommissionEmployee {
     private double baseSalary = 0;
 
+    public BasePlusCommissionEmployee(){
+
+    }
+
     public BasePlusCommissionEmployee(double totalSales, double baseSalary) {
         super(totalSales);
         this.baseSalary = baseSalary;
     }
 
-    public BasePlusCommissionEmployee(int empID, String empName, Date empDateHired, Date empBirthDate, double totalSales, double baseSalary) {
+    public BasePlusCommissionEmployee(int empID, Name empName, Date empDateHired, Date empBirthDate, double totalSales, double baseSalary) {
         super(empID, empName, empDateHired, empBirthDate, totalSales);
         this.baseSalary = baseSalary;
     }
@@ -27,12 +31,12 @@ public class BasePlusCommissionEmployee extends CommissionEmployee {
       return baseSalary;
     }
 
-    public void setBaseSalary(){
+    public void setBaseSalary(double baseSalary){
       this.baseSalary = baseSalary > 0 ? baseSalary : 0;
     }
 
     public double computeSalary() {
-        double totalSales = getTotalSales();
+        double totalSales = super.getTotalSales();
       if(totalSales < 50000){
         totalSales *= .05;
       } else if (totalSales >= 50000 && totalSales < 100000){
@@ -49,7 +53,7 @@ public class BasePlusCommissionEmployee extends CommissionEmployee {
 
     public void displayInfo(){
         System.out.println("Base Plus Commission Employee: \n");
-        System.out.println(toString());
+        System.out.println(this);
         System.out.printf("Salary: %.2f%n", computeSalary());
     }
 
