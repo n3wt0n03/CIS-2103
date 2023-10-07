@@ -1,22 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package employee.verison2;
+package employee.version5;
 
-/**
- *
- * @author NewtskieTzy
- */
-public class CommissionEmployee extends Employee{
+public class CommissionEmployee extends Employee {
     private double totalSales = 0;
+
+    public CommissionEmployee(){
+    }
 
     public CommissionEmployee(double totalSales) {
         this.totalSales = totalSales;
     }
 
-    public CommissionEmployee(int empID, String empName, Date empDateHired, Date empBirthDate, double totalSales) {
+    public CommissionEmployee(int empID, Name empName, Date empDateHired, Date empBirthDate, double totalSales) {
         super(empID, empName, empDateHired, empBirthDate);
         this.totalSales = totalSales;
     }
@@ -29,7 +23,7 @@ public class CommissionEmployee extends Employee{
         this.totalSales = totalSales > 0 ? totalSales : 0;
     }
 
-    public double computeSalary() {
+    double computeSalary() {
         if(totalSales < 50000){
             return totalSales * .05;
         } else if (totalSales >= 50000 && totalSales < 100000){
@@ -42,7 +36,6 @@ public class CommissionEmployee extends Employee{
     }
 
     public void displayInfo(){
-        System.out.println("\nCommission Employee: \n");
         System.out.println(this);
         System.out.printf("Salary: %.2f%n", computeSalary());
     }

@@ -84,7 +84,7 @@ public class PieceWorkerEmployee {
         this.ratePerPiece = ratePerPiece > 0 ? ratePerPiece : 0;
     }
     
-    double computeSalary(){
+    public double computeSalary(){
         double salary;
         double bonus = 0;
         

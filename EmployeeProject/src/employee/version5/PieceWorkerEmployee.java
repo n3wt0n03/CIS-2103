@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package employee.version3;
+package employee.version5;
 
-/**
- *
- * @author NewtskieTzy
- */
 public class PieceWorkerEmployee extends Employee {
     private int totalPiecesFinished = 0;
     private float ratePerPiece = 0;
@@ -48,6 +39,7 @@ public class PieceWorkerEmployee extends Employee {
     public double computeSalary(){
         double salary;
 
+
         //Salary below 100 pieces finished
         salary = totalPiecesFinished * ratePerPiece;
 
@@ -61,7 +53,6 @@ public class PieceWorkerEmployee extends Employee {
     }
 
     public void displayInfo(){
-        System.out.println("\nPiece Per Worker Employee: \n");
         System.out.println(this);
         System.out.printf("Salary: %.2f%n", computeSalary());
         System.out.println("Added Bonus: " + bonus );

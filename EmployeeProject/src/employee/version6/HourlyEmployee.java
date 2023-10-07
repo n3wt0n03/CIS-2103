@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package employee.version3;
+package employee.version6;
 
-/**
- *
- * @author NewtskieTzy
- */
 public class HourlyEmployee extends Employee {
     private float totalHourWorked = 0;
     private float ratePerHour = 0;
@@ -59,7 +50,8 @@ public class HourlyEmployee extends Employee {
             salary = totalHourWorked * ratePerHour;
             this.overtimePay = 0;
         } else {
-            //(75*5)* 1.5 = 562.5-> OT Pay
+            //(75*5) * 1.5 = 562.5-> OT Pay
+            //(75*40) + 562.5 = 3562.5 -> Salary with OT Pay
             this.hrsOvertime = totalHourWorked - 40;
             this.overtimePay = (hrsOvertime*ratePerHour)*1.5;
             salary = (ratePerHour*40) + overtimePay;
@@ -68,7 +60,6 @@ public class HourlyEmployee extends Employee {
     }
 
     public void displayInfo(){
-        System.out.println("\nHourly Employee: \n");
         System.out.println(this);
         System.out.printf("Salary: %.2f%n", computeSalary());
         System.out.printf("Overtime Pay: %.2f\n%n", getOvertimePay());
@@ -83,3 +74,4 @@ public class HourlyEmployee extends Employee {
 
 
 }
+

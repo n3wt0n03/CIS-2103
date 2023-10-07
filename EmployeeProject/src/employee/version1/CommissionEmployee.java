@@ -74,7 +74,7 @@ public class CommissionEmployee {
         this.totalSales = totalSales > 0 ? totalSales : 0;
     }
     
-    double computeSalary() {
+    public double computeSalary() {
       if(totalSales < 50000){
         return totalSales * .05;
       } else if (totalSales >= 50000 && totalSales < 100000){
